@@ -14,8 +14,40 @@
 html,
 body {
     height: 100%;
+    background-color: #11181c;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #fffde9;
+}
+
+span,
+i:hover,
+a:hover {
+    color: #648adc;
+}
+
+p,
+i,
+a {
+    color: #606060;
+}
+
+button {
+    border: #648adc solid 2px;
+    color: #fffde9;
 }
 
 .logo {
     font-family: "Shadows Into Light";
+}
+
+.hide-navbar {
+    transform: translateY(-100%);
 }

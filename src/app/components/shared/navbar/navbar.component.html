@@ -1,7 +1,12 @@
-<nav class="h-20 rounded-2xl flex gap-12 justify-center items-center uppercase m-8">
-    <a class="cursor-pointer text-slate-400 hover:text-slate-900 transition-all duration-300">About</a>
-    <a class="cursor-pointer text-slate-400 hover:text-slate-900 transition-all duration-300">Works</a>
+<nav [ngClass]="{'hide-navbar': hideNavbar}" class="fixed w-full transition-all duration-300 top-0 left-0 h-20 rounded-2xl flex justify-between items-center p-8">
     <h1 class="logo text-5xl font-semibold hover:-translate-y-1 transition-all duration-300 cursor-pointer">HR</h1>
-    <a class="cursor-pointer text-slate-400 hover:text-slate-900 transition-all duration-300">Contact</a>
-    <a class="cursor-pointer text-slate-400 hover:text-slate-900 transition-all duration-300">CV</a>
+    <div class="flex gap-12 items-center ">
+        <a class="cursor-pointer transition-all duration-300">About</a>
+        <a class="cursor-pointer transition-all duration-300">Experience</a>
+        <a class="cursor-pointer transition-all duration-300">Works</a>
+        <a class="cursor-pointer transition-all duration-300">Contact</a>
+        <div class="w-28">
+            <button class="p-1 px-4 rounded-lg bg-transparent hover:border-b-4 hover:border-r-4 transition-all duration-150">Resume</button>
+        </div>
+    </div>
 </nav>
