@@ -1,18 +1,19 @@
 import { Component, HostListener, inject } from '@angular/core';
 import { ScrollService } from '../../../services/scroll.service';
 import { RouterModule } from '@angular/router';
+import { MatTabsModule } from '@angular/material/tabs';
 
 @Component({
   selector: 'app-home',
-  imports: [RouterModule],
+  imports: [RouterModule, MatTabsModule],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  styleUrl: './home.component.css',
 })
 export class HomeComponent {
-  scrollService = inject(ScrollService)
+  scrollService = inject(ScrollService);
 
   @HostListener('window:scroll', [])
-  onWindowScroll(){
-    this.scrollService.updateScrollY(window.scrollY)
+  onWindowScroll() {
+    this.scrollService.updateScrollY(window.scrollY);
   }
 }
