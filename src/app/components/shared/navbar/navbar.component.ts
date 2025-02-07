@@ -12,6 +12,11 @@ export class NavbarComponent implements OnInit {
   hideNavbar:boolean = false
 
   scrollService = inject(ScrollService)
+  isMenuOpen = false;
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
 
   ngOnInit(): void {
       this.scrollService.scrollY$.subscribe(scrollY =>{

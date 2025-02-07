@@ -1,6 +1,6 @@
 <!-- left fixed icons -->
 <div
-  class="flex gap-8 items-center flex-col fixed left-8 bottom-12 text-2xl h-60"
+  class="md:flex hidden gap-8 items-center flex-col fixed left-8 bottom-12 text-2xl h-60"
 >
   <i
     class="fa-brands fa-github hover:-translate-y-1 cursor-pointer transition-all duration-300"
@@ -20,14 +20,14 @@
 </div>
 <!-- right fixed email -->
 <a
-  class="fixed -right-16 bottom-40 font-mono rotate-90 transition-all duration-300"
+  class="hidden md:block fixed -right-16 bottom-40 font-mono rotate-90 transition-all duration-300"
   >habeebrahmanca07&commat;gmail.com</a
 >
 <!-- banner section -->
-<main class="mx-80 mt-60">
+<main class="2xl:mx-80 xl:mx-60 lg:mx-40 md:mx-20 sm:mx-10 mx-4 md:mt-60 mt-40">
   <div class="flex items-center gap-8 h-80">
     <div class="px-8">
-      <div class="text-7xl font-semibold flex flex-col">
+      <div class="2xl:text-7xl xl:text-6xl md:text-5xl sm:text-4xl text-3xl font-semibold flex flex-col">
         <h1>Habeebu Rahman.</h1>
         <span>a Software Developer.</span>
       </div>
@@ -44,10 +44,10 @@
     </div>
   </div>
   <!-- about section -->
-  <div class="mt-44 px-8">
-    <h1 class="font-semibold text-4xl">About Me</h1>
+  <div class="md:mt-44 mt-24 px-8">
+    <h1 class="font-semibold md:text-4xl sm:text-3xl text-2xl">About Me</h1>
     <div class="flex mt-8 gap-8 items-center">
-      <div class="flex flex-col gap-4 w-2/3 text-justify">
+      <div class="flex flex-col gap-4 md:w-2/3 w-full text-justify">
         <p>
           Hello! My name is Habeeb Rahman, and I’m a passionate Software
           Developer currently working at
@@ -69,7 +69,7 @@
           development, always striving to push my limits.
         </p>
       </div>
-      <div class="w-1/3">
+      <div class="md:w-1/3 hidden md:block">
         <img
           class="h-72 rounded-xl grayscale hover:grayscale-0 hover:scale-105 transition-all duration-700"
           src="profilePic.jpg"
@@ -79,11 +79,11 @@
     </div>
   </div>
   <!-- experience section -->
-  <div class="mt-52 px-8">
-    <h1 class="font-semibold mb-8 text-4xl">Where I've Worked</h1>
+  <div class="md:mt-52 mt-28 px-8">
+    <h1 class="font-semibold mb-8  md:text-4xl sm:text-3xl text-2xl">Where I've Worked</h1>
     <mat-tab-group>
       <mat-tab label="Seeroo">
-        <div class="mt-8 h-60">
+        <div class="mt-8 lg:h-60 h-80">
           <h1 class="text-xl font-semibold">
             Software Developer
             <span class="hover:underline cursor-pointer">&commat; Seeroo</span>
@@ -125,7 +125,7 @@
         </div>
       </mat-tab>
       <mat-tab label="Edure">
-        <div class="mt-8 h-60">
+        <div class="mt-8 lg:h-60 h-80">
           <h1 class="text-xl font-semibold">
             Full Stack Intern
             <span class="hover:underline cursor-pointer">&commat; Edure</span>
@@ -168,7 +168,7 @@
     </mat-tab-group>
   </div>
   <!-- works section -->
-  <div class="mt-40 px-8">
+  <div class="md:mt-40 mt-10 px-8">
     <h1 class="font-semibold mb-8 text-4xl">Some Things I've Built</h1>
     
   </div>
