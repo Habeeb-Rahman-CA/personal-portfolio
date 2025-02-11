@@ -1,12 +1,13 @@
-import { Component, ElementRef, HostListener, inject } from '@angular/core';
+import { Component, HostListener, inject } from '@angular/core';
 import { ScrollService } from '../../../services/scroll.service';
 import { RouterModule } from '@angular/router';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatIconModule } from '@angular/material/icon'
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-home',
-  imports: [RouterModule, MatTabsModule, CommonModule],
+  imports: [RouterModule, MatTabsModule, CommonModule, MatIconModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
@@ -17,5 +18,5 @@ export class HomeComponent {
   onWindowScroll() {
     this.scrollService.updateScrollY(window.scrollY);
   }
-  
+
 }
