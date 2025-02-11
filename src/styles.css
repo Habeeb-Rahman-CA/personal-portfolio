@@ -44,12 +44,5 @@ button {
     color: #fffde9;
 }
 
-.logo {
-    font-family: "Shadows Into Light";
-}
-
-.hide-navbar {
-    transform: translateY(-100%);
-}
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0;}
