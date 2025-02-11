@@ -1,10 +1,10 @@
 import { Component, HostListener, inject } from '@angular/core';
-import { ScrollService } from '../../../services/scroll.service';
 import { RouterModule } from '@angular/router';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatIconModule } from '@angular/material/icon'
 import { CommonModule } from '@angular/common';
-import { IWork } from '../../../interface/works.interface';
+import { IWork } from '../../interface/works.interface';
+import { IExperience } from '../../interface/experience.interface';
 
 @Component({
   selector: 'app-home',
@@ -13,8 +13,28 @@ import { IWork } from '../../../interface/works.interface';
   styleUrl: './home.component.css',
 })
 export class HomeComponent {
-  scrollService = inject(ScrollService);
 
+  //experience section
+  experiences: IExperience[] = [
+    {
+      role: "Software Developer",
+      companyName: "Seeroo",
+      desc: "Worked with the Web team, contributing to both client and server-side development. Built, developed, and maintained large-scale applications while working on production-level code. Currently continuing my journey at Seeroo IT Solutions, gaining hands-on experience in full-stack development.",
+      joinDate: "January 2025", // format - (Month<space>Year)
+      quitDate: "Present",
+      tools: ["Angular", "Nest.js", "PostegreSQL", "Node.js", "React"]
+    },
+    {
+      role: "MEAN Stack Intern",
+      companyName: "Edure",
+      desc: "Developed and maintained large-scale applications, building a strong foundation in full-stack development and gaining deep expertise in web development. Additionally, worked on freelance projects for various clients during this period.",
+      joinDate: "July 2024", // format - (Month<space>Year)
+      quitDate: "December 2024",
+      tools: ["Angular", "Express.js", "MongoDB", "Node.js", "Firebase", "Figma"]
+    },
+  ]
+
+  // work section
   works: IWork[] = [
     {
       name: "ArtOgram",
@@ -38,10 +58,4 @@ export class HomeComponent {
       tools: ["HTML", "CSS", "Javascript", "Chart.js", "TradingView"]
     },
   ]
-
-  @HostListener('window:scroll', [])
-  onWindowScroll() {
-    this.scrollService.updateScrollY(window.scrollY);
-  }
-
 }
