@@ -90,7 +90,7 @@
     <div class="mt-8 flex flex-col gap-4">
       @for (work of works; track $index) {
       <a [href]="work.link" target="_blank"
-        class="group w-full md:flex p-4 gap-4 hover:bg-[#648adc08] hover:shadow-md rounded-lg transition-all duration-300">
+        class="group hover:-translate-x-1 w-full md:flex p-4 gap-4 hover:bg-[#648adc08] hover:shadow-md rounded-lg transition-all duration-300">
         <div class="md:w-4/12">
           <img [src]="work.imgUrl" class="w-full md:h-32 h-48 border-2 border-[#606060] rounded-md">
         </div>
