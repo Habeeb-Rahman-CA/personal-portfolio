@@ -40,7 +40,7 @@ export class HomeComponent {
       name: "ArtOgram",
       desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa voluptas beatae qui inventoreexplicabo exdolor deleniti molestias, corrupti pariatur eius omnis nemo architecto laudantium quis reiciendis voluptatibus rem. Vitae? lorem",
       imgUrl: "artOgram.png",
-      link: "#",
+      link: "https://artogram.netlify.app/home",
       tools: ["MongoDB", "Express.js", "Angular", "Node.js", "Razorpay"]
     },
     {
